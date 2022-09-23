@@ -84,13 +84,19 @@ $faqs = [
 ];
 ?>
 
+<header>
+
+</header>
+
 <main>
     <div class="container">
         <?php
             foreach($faqs as $value){
             ?>
-                <h1><?= $value['question'] ?></h1>
-                <p><?= $value['answer'] ?></p>
+                <div>
+                    <h1><?= $value['question'] ?></h1>
+                    <p><?= $value['answer'] ?></p>  
+                </div>
             <?php    
             }
         ?>
